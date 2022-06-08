@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.limpiarEstilos::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+body {
+    color: rgb(182, 4, 4);
+    font-family: sans-serif;
+    font-size: 18px;
+    position: relative;
+    height: 120vh;
+    font-weight: 410;
+}
+
+.right { float:right }
+
+.cabecera {
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    color: rgb(255, 250, 250);
+    background: url(https://i.pinimg.com/originals/a3/78/ac/a378ac7477b78b9c8a47bd57bb33f668.jpg);
+    background: url(https://i.pinimg.com/originals/a3/78/ac/a378ac7477b78b9c8a47bd57bb33f668.jpg), 
+    -webkit-gradient(Linear,right top, from(#7b4397) to (#dc2430));
+}
+
+.presupuesto {
+    position: absolute;
+    width: 410px;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #200096;
+}
+
+.presupuesto_titulo{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.presupuesto_valor {
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 20px;
+}
+
+.presupuesto_ingreso, .presupuesto_egreso {
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.presupuesto_ingreso {
+    margin-bottom: 18px;
+    background-color: rgb(247, 47, 114);
+    
+}
+
+.presupuesto_egreso {
+    background-color: #05fcfc;
+}
+
+.presupuesto_ingreso--texto, .presupuesto_egreso--texto {
+    float: left;
+    font-size: 15px;
+    color: rgb(6, 255, 255);
+    margin-top: 4px;
+}
+
+.presupuesto_ingreso--porcentaje {
+    float: left;
+    width: 36px;
+    font-size: 14px;
+    padding: 3px 0;
+    margin-left: 3px;
+}
+
+.presupuesto_egreso--porcentaje {
+    background-color: #02ff0f;
+    text-align: center;
+    border-radius: 3px;
+}
+
